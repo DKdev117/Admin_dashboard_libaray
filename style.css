@@ -1,0 +1,134 @@
+* {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  & a:link {
+    text-decoration: none;
+  }
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: rgba(200, 200, 200, 0.955);
+  --lightblue: rgba(24, 113, 216, 0.718);
+  --darkblue: rgb(7, 137, 236);
+  --fullwhite: rgb(249, 249, 249);
+}
+
+::selection {
+  color: var(--darkblue);
+  background: var(--fullwhite);
+}
+body {
+  background-color: var(--fullwhite);
+  overflow-x: hidden;
+}
+
+#header {
+  border-bottom: 3px solid var(--white);
+}
+
+#bookimg {
+  height: 60px;
+  margin: 25px 40px 50px 10px;
+}
+
+.contain {
+  font-size: smaller;
+  margin-left: 100px;
+  margin-top: -130px;
+}
+
+.contain h3 {
+  margin-top: 23px;
+  margin-bottom: -3px;
+  color: rgb(101, 101, 101);
+}
+
+.contain p {
+  font-size: smaller;
+  color: rgb(69, 68, 68);
+}
+
+.rightside {
+  display: flex;
+  margin-top: 25px;
+  & #email {
+    margin: 14px 10px 0 10px;
+  }
+
+  & #peopleimg {
+    border-radius: 50%;
+    margin: 0 20px;
+  }
+}
+
+p#admin {
+  color: var(--lightblue);
+  margin-top: 5px;
+}
+
+#sidebar {
+  padding: 20px 0 10px 40px;
+  line-height: 300%;
+  text-transform: uppercase;
+  border-right: 3px solid var(--white);
+
+  & ul {
+    list-style-type: none;
+    color: rgb(103, 103, 103);
+    font-weight: 700;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  & #list li i {
+    margin-right: 20px;
+  }
+  & #list li {
+    border-bottom: 3px solid var(--white);
+  }
+  & li:hover {
+    color: var(--darkblue);
+  }
+}
+
+.secondcontain {
+  text-transform: capitalize;
+  margin: 20px 10px 20px 0;
+  & h5 {
+    color: rgb(29, 29, 29);
+  }
+}
+
+.bookcard {
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 20px;
+  & .card {
+    height: 163px;
+    margin: 10px;
+  }
+  & img {
+    height: 58px;
+    width: 60px;
+    margin: 20px;
+  }
+
+  & .card-body {
+    margin: -97px 0 0px 100px;
+  }
+
+  & .card-title {
+    white-space: nowrap;
+  }
+}
+
+.chartpart {
+  margin-bottom: 20px;
+}
+@media (max-width: 968px) {
+  .secondcontain {
+    text-align: center;
+  }
+}
